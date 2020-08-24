@@ -1,0 +1,34 @@
+print("Hey there! In case you have forgotten, this program will tell you your name, your age, and the stage of your life you're in!")
+
+#name
+name=input("What is your name? ") 
+
+#year of birth
+yearborn=input("What year were you born? ")
+
+#calculate age
+age=(2020-int(yearborn))
+
+#determining stage of life
+if (0<=age<=5):
+  print("Your name is " + str(name) + ". You are " + str(age)+" years old this year. You are a baby!")
+if (6<age<=10):
+  print("Your name is " + str(name) + ". You are " + str(age)+" years old this year. You are in primary school!")
+if (10<age<=13):
+  print("Your name is " + str(name) + ". You are " + str(age)+" years old this year. You are in middle school!")
+if (13<age<=18):
+  print("Your name is " + str(name) + ". You are " + str(age)+" years old this year. You are in high school!")
+if (18<age<=22):
+  print("Your name is " + str(name) + ". You are " + str(age)+" years old this year. You are in college!")
+if (22<age<=29):
+  print("Your name is " + str(name) + ". You are " + str(age)+" years old this year. You are just starting real life!")
+if (29<age<=45):
+  print("Your name is " + str(name) + ". You are " + str(age)+" years old this year. You are about middle aged!")
+if (45<age<=59):
+  print("Your name is " + str(name) + ". You are " + str(age)+" years old this year. You are nearing retirement!")
+if (59<age<=90):
+  print("Your name is " + str(name) + ". You are " + str(age)+" years old this year. You are a senior citizen!")
+if (90<age):
+  print("Your name is " + str(name) + ". You are " + str(age)+" years old this year. You are like... really old!")
+if (age<0):
+  print("Your name is " + str(name) + ". You are " + str(age)+" years old this year. That's absurd.")
